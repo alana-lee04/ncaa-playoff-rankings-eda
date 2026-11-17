@@ -27,6 +27,12 @@ Which attributes matter most to the Selection Committee when choosing the top fo
 - **Yards per pass:** no consistent relationship across years.
 - These statistics matter but don't guarantee selection. Strength of schedule, conference performance and other hard-to-measure factors also play a role, and the committee's choices sometimes look inconsistent.
 
+## Code
+
+[`analysis.R`](analysis.R) contains the full analysis: scraping, cleaning, ranking and every chart in the report.
+
+To run it, you'd need the saved ESPN statistics pages in a `data_raw/` folder (for example, `2023_passing_offense.html` and `defense_yards_14.html`). These aren't included in this repository. The Associated Press rankings are scraped directly from ESPN's rankings pages.
+
 ## Tools
 
 R: `rvest`, `dplyr`, `tidyr`, `ggplot2`, `cowplot`, `gganimate`, `stringdist`, `janitor`, `stringr`, `here`, `magick`.
